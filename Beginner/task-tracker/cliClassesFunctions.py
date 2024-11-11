@@ -1,11 +1,8 @@
 import json
 from datetime import datetime
-from main import taskId
-
 
 #   Lists | Variables
 taskList = []
-
 
 #   Definition of the task class
 class Task:
@@ -187,9 +184,9 @@ def importTo(fileName):
         with open(fileName, 'r') as file:
             tasks = json.load(file)
             for task_data in tasks:
-                task = Task(**task_data)  # Desempaqueta el diccionario en los parámetros del constructor
+                task = Task(**task_data)
                 taskList.append(task)
-                taskId = max(taskId, task.taskId + 1)  # Actualiza taskId si es necesario
+                taskId = max(taskId, task.taskId + 1)
         print(f"Tasks successfully imported from {fileName}.")
     except FileNotFoundError:
         print(f"The file {fileName} was not found.")
