@@ -5,6 +5,6 @@ Each project has its own folder, named according to the project, which includes 
 
 Projects for Beginners
 
-[Task Management App](https://roadmap.sh/projects/task-tracker)
+- [Task Management App](https://roadmap.sh/projects/task-tracker)
 
 To see the complete beginner project list, click here.
